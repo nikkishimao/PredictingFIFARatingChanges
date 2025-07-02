@@ -19,7 +19,9 @@ Specifically, little research has examined how injuries affect players over time
 <p>Our dataset merges multiple open and scraped sources. Injury and player metadata were sourced from a GitHub repository containing scraped records from Transfermarkt and FBREF, including data on injury type, duration, position, and club affiliation. FIFA rating data for FC24 and FC25 was manually scraped from Fifaratings.com due to the lack of accessible APIs or bulk download options.
 
 <ul>
-  <li><a href="https://github.com/pkardjian/soccer_injury_risk_prediction/blob/main/README.md">Sourced GitHub Repositoryn</a></li>
+  <li><a href="data">All Datasets</a></li>
+  <li><a href="code_files/fifa_web_scraper.ipynb">FIFA Web Scraper</a></li>
+  <li><a href="https://github.com/pkardjian/soccer_injury_risk_prediction/blob/main/README.md">Sourced GitHub Repository</a></li>
   <li><a href="https://www.fifaratings.com/">Fifaratings.com</a></li>
 </ul>
   
