@@ -38,11 +38,19 @@ For regression, we tested Linear Regression, Decision Tree Regressor, Random For
 
 Among the regression models, the Random Forest Regressor delivered the best performance, though we remained mindful of overfitting concerns and conducted further evaluation to ensure model generalization. Model performance was documented using metrics such as R², accuracy (for classification comparison), and confusion matrices where applicable.
 
+<ul>
+  <li><a href="code_files/methods_part1.ipynb">Methods Part 1 Code</a></li>
+</ul>
+
 Following our initial analysis (from our initial part 1 results - methods part 1), we continued to apply predictive modeling to explore how injury characteristics relate to changes in player performance, using both regression and classification approaches. We began by treating the task as a regression problem, testing several models including Linear Regression, Decision Tree Regressor, Random Forest Regressor, and Gradient Boosting Regressor. For this analysis, our target variable was rating_change representing the difference between pre- and post-injury performance ratings. Prior to modeling, we excluded identifiers (e.g., player name, team) and redundant or post-injury-dependent features to prevent data leakage. We evaluated models using standard regression metrics—R², Mean Absolute Error (MAE), and Root Mean Squared Error (RMSE)—on an 80/20 train-test split.
 
 We then reformulated the problem as a classification task by categorizing rating_change into three discrete outcomes: increase, decrease, or no change. A Random Forest Classifier was applied, and to better understand model decision-making, we incorporated SHAP to interpret individual prediction contributions. To implement SHAP, we first created a synthetic player by averaging the test set features and adjusting specific variables (like assigning an injury type or age) to simulate different injury scenarios. Using this synthetic player, we predicted the class of performance change using the trained Random Forest model. Next, we applied SHAP’s TreeExplainer to calculate Shapley values, which measure the contribution of each feature to the prediction for that synthetic player. The Shapley values were then visualized using a force plot, which provided a clear illustration of how each feature influenced the predicted class of performance change.
 
 To further evaluate the potential for predicting specific changes in ratings, we also framed the task as a multi-class classification problem. In this setup, each class represented an exact change in player rating. We tested both Decision Tree and Gradient Boosting classifiers, including versions with increased tree depth to handle potential feature interactions and non-linearities. Due to the granularity of this approach, special attention was given to handling class imbalance and evaluating model generalization.</p>
+
+<ul>
+  <li><a href="code_files/methods_part2.ipynb">Methods Part 2 Code</a></li>
+</ul>
 
 <h2>Results</h2>
 
