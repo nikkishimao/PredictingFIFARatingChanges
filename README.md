@@ -1,4 +1,4 @@
-<h1>Predicting FIFA Rating Changes from Player Injuries</h1>
+<h1>Predicting FIFA Rating Changes Premier League Soccer Player Injuries</h1>
 
 <h2>Introduction</h2>
 
